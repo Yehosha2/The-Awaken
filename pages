@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>The Awakened — Page 1</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: #eee5d2;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .book-page {
+      max-width: 800px;
+      min-height: 100vh;
+      margin: auto;
+      padding: 55px 28px 70px;
+      line-height: 1.9;
+      font-size: 19px;
+    }
+
+    .top {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .symbol {
+      font-size: 40px;
+      color: #c9a65a;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: normal;
+      letter-spacing: 4px;
+    }
+
+    .subtitle {
+      margin-top: 12px;
+      color: #bba77b;
+      font-style: italic;
+    }
+
+    .line {
+      width: 100px;
+      height: 1px;
+      background: #806b3f;
+      margin: 30px auto;
+    }
+
+    .chapter {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .chapter h2 {
+      font-size: 27px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    .chapter p {
+      color: #a9956d;
+      font-style: italic;
+    }
+
+    .story p {
+      margin: 0 0 26px;
+    }
+
+    .first-letter::first-letter {
+      font-size: 48px;
+      float: left;
+      line-height: 38px;
+      padding-right: 7px;
+      color: #c9a65a;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 60px;
+      padding-top: 25px;
+      border-top: 1px solid #3b352b;
+    }
+
+    .navigation a {
+      color: #eee5d2;
+      text-decoration: none;
+      border: 1px solid #806b3f;
+      padding: 11px 18px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .navigation a:hover {
+      background: #c9a65a;
+      color: #0b0b0b;
+    }
+
+    .page-number {
+      color: #a9956d;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .book-page {
+        padding: 40px 21px 55px;
+        font-size: 17px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .chapter h2 {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="book-page">
+
+  <header class="top">
+
+    <div class="symbol">✦</div>
+
+    <h1>THE AWAKENED</h1>
+
+    <div class="subtitle">
+      Book One: Before the Beginning
+    </div>
+
+    <div class="line"></div>
+
+  </header>
+
+  <section class="chapter">
+
+    <h2>Prologue</h2>
+
+    <p>Before the Beginning</p>
+
+  </section>
+
+  <article class="story">
+
+    <p class="first-letter">
+      Before there were kingdoms, before there were temples,
+      before the first written word was pressed into clay,
+      there was a memory.
+    </p>
+
+    <p>
+      It existed before the names of nations, before the borders
+      of kingdoms, and before humanity had learned to measure
+      the passage of time.
+    </p>
+
+    <p>
+      The oldest people remembered it differently.
+      Some spoke of a light that descended from the heavens.
+      Others spoke of a voice that came from the deep places
+      beneath the earth.
+    </p>
+
+    <p>
+      Priests carved fragments of the story into stone.
+      Scribes copied what they believed they understood.
+      Generations passed, and the original meaning slowly
+      disappeared beneath layers of interpretation.
+    </p>
+
+    <p>
+      But the memory itself never died.
+    </p>
+
+    <p>
+      It waited.
+    </p>
+
+    <p>
+      And somewhere beneath the ruins of the ancient world,
+      something had been left behind.
+    </p>
+
+    <p>
+      Something that was never meant to be found.
+    </p>
+
+    <p>
+      Until now.
+    </p>
+
+  </article>
+
+  <nav class="navigation">
+
+    <a href="../index.html">
+      ← Cover
+    </a>
+
+    <span class="page-number">
+      Page 1
+    </span>
+
+    <a href="page-02.html">
+      Next →
+    </a>
+
+  </nav>
+
+</main>
+
+</body>
+</html>
