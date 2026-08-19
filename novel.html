@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Awakened — Book One</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #111;
+      color: #eee5d0;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 35px 20px 20px;
+      border-bottom: 1px solid #3d372d;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 4px;
+      font-weight: normal;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      color: #b9a985;
+      font-style: italic;
+    }
+
+    .reader {
+      width: 100%;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 40px 25px 70px;
+    }
+
+    .page {
+      display: none;
+      min-height: 65vh;
+      line-height: 1.9;
+      font-size: 19px;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    .page-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .page-title h2 {
+      font-size: 28px;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+
+    .page-title p {
+      color: #a99670;
+      font-style: italic;
+    }
+
+    .page p {
+      margin: 0 0 24px;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-top: 45px;
+      padding-top: 25px;
+      border-top: 1px solid #3d372d;
+    }
+
+    button {
+      background: transparent;
+      color: #eee5d0;
+      border: 1px solid #8f7849;
+      padding: 12px 20px;
+      cursor: pointer;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: #8f7849;
+      color: #111;
+    }
+
+    button:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    #pageNumber {
+      color: #a99670;
+      white-space: nowrap;
+    }
+
+    .back {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 25px;
+      color: #a99670;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      color: #eee5d0;
+    }
+
+    @media (max-width: 600px) {
+      .reader {
+        padding: 30px 20px 50px;
+      }
+
+      .page {
+        font-size: 17px;
+        line-height: 1.8;
+      }
+
+      header h1 {
+        font-size: 26px;
+      }
+
+      .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>THE AWAKENED</h1>
+  <p>Book One: Before the Beginning</p>
+</header>
+
+<main class="reader">
+
+  <a class="back" href="index.html">← Back to Cover</a>
+
+  <!-- PAGE 1 -->
+
+  <section class="page active">
+
+    <div class="page-title">
+      <h2>Prologue</h2>
+      <p>Before the Beginning</p>
+    </div>
+
+    <p>
+      Before there were kingdoms, before there were temples,
+      and before mankind gave names to the stars, there was a memory.
+    </p>
+
+    <p>
+      It was older than the first city and deeper than the oldest
+      stone buried beneath the earth.
+    </p>
+
+    <p>
+      Those who carried the memory called it many things.
+      Some called it the Beginning.
+      Others called it the Voice.
+      A few simply called it the Light.
+    </p>
+
+    <p>
+      But the truth had been hidden for thousands of years.
+    </p>
+
+    <p>
+      And now, it was beginning to awaken.
+    </p>
+
+  </section>
+
+  <!-- PAGE 2 -->
+
+  <section class="page">
+
+    <div class="page-title">
+      <h2>Chapter One</h2>
+      <p>The Awakening</p>
+    </div>
+
+    <p>
+      Maya Reed woke before dawn with the feeling that someone
+      had spoken her name.
+    </p>
+
+    <p>
+      She sat upright in the darkness and listened.
+    </p>
+
+    <p>
+      Nothing.
+    </p>
+
+    <p>
+      Outside, the city was silent beneath the last hours of night.
+      Yet the feeling remained.
+    </p>
+
+    <p>
+      Something was calling her.
+    </p>
+
+  </section>
+
+  <!-- PAGE 3 -->
+
+  <section class="page">
+
+    <div class="page-title">
+      <h2>Chapter One</h2>
+      <p>The Mark</p>
+    </div>
+
+    <p>
+      Maya reached for the ancient object resting beside her bed.
+    </p>
+
+    <p>
+      She had found it three days earlier among the belongings
+      left behind by her grandfather.
+    </p>
+
+    <p>
+      At first she believed it was nothing more than an old piece
+      of carved stone.
+    </p>
+
+    <p>
+      But when her fingers touched the symbol in its center,
+      the room changed.
+    </p>
+
+    <p>
+      For a single moment, Maya saw a place she had never visited.
+    </p>
+
+    <p>
+      A mountain.
+      A fire burning beneath a black sky.
+      And a man standing beside an ancient gate.
+    </p>
+
+  </section>
+
+  <div class="navigation">
+
+    <button id="previousButton" onclick="previousPage()">
+      ← Previous
+    </button>
+
+    <span id="pageNumber">Page 1 of 3</span>
+
+    <button id="nextButton" onclick="nextPage()">
+      Next →
+    </button>
+
+  </div>
+
+</main>
+
+<script>
+
+  let currentPage = 0;
+
+  const pages = document.querySelectorAll(".page");
+  const pageNumber = document.getElementById("pageNumber");
+  const previousButton = document.getElementById("previousButton");
+  const nextButton = document.getElementById("nextButton");
+
+  function showPage(number) {
+
+    pages.forEach((page, index) => {
+      page.classList.toggle("active", index === number);
+    });
+
+    pageNumber.textContent =
+      "Page " + (number + 1) + " of " + pages.length;
+
+    previousButton.disabled = number === 0;
+    nextButton.disabled = number === pages.length - 1;
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  function nextPage() {
+
+    if (currentPage < pages.length - 1) {
+      currentPage++;
+      showPage(currentPage);
+    }
+
+  }
+
+  function previousPage() {
+
+    if (currentPage > 0) {
+      currentPage--;
+      showPage(currentPage);
+    }
+
+  }
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "ArrowRight") {
+      nextPage();
+    }
+
+    if (event.key === "ArrowLeft") {
+      previousPage();
+    }
+
+  });
+
+  showPage(currentPage);
+
+</script>
+
+</body>
+</html>
